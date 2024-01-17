@@ -19,6 +19,21 @@ nav {
   margin-bottom: 40px;
 }
 
+.menu-btn {
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 80%;
+  height: 3px;
+  background-color: #131318;
+}
+
 .logo-part {
   display: flex;
   align-items: center;
@@ -277,9 +292,28 @@ nav {
   flex-direction: column;
 }
 
+/* Footer Related Styles */
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 100px 0;
+  background: rgba(19, 19, 24, 0.05);
+}
+
 /* Responsive Related Styles */
 /* Smaller Devices */
 @media screen and (max-width: 600px) {
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
   .logo-part img {
     width: 28.724px;
     height: 33.516px;
